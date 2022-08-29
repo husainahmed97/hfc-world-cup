@@ -1,0 +1,421 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style  */
+body {
+    background: #000000;
+    font-family: 'Poppins', sans-serif;
+}
+
+main,
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1200px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    background-color: blue;
+    width: 1200px;
+    height: 600px;
+}
+
+
+/* button style  */
+.button {
+    background-color: #E02C6D;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 24px;
+    margin-right: 20px;
+}
+
+.button a {
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.fa-sign {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+/* header caption and bannar */
+.header-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-caption {
+    width: 485px;
+    margin-left: 30px;
+}
+
+.header-caption h1 {
+    color: #FFFFFF;
+    font-size: 64px;
+
+}
+
+.header-image img {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    top: 80px;
+}
+
+.header:hover .header-image img {
+    transform: rotate(360deg);
+    transition: transform 1s ease-in-out;
+}
+
+.header:hover .button {
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+/* main content  */
+
+
+/* Aside  */
+.menu-player {
+    display: grid;
+    grid-template-columns: 312px auto;
+    grid-gap: 30px;
+}
+
+.aside-menu {
+    height: 250px;
+    width: 312px;
+    background-color: black;
+    margin-top: 70px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+}
+
+.aside-menu ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+
+.aside-menu li {
+    list-style: none;
+    width: 200px;
+    height: 30px;
+    padding: 8px;
+    margin: 15px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+
+}
+
+.aside-menu li a:hover {
+    color: orange;
+
+}
+
+.aside-menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: #110202;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.player {
+    width: 200px;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+
+.player-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.teem-vs {
+    width: 90px;
+    height: 90px;
+
+}
+
+.teem-vs img {
+    width: 100%;
+}
+
+.player-info {
+    width: 200px;
+    text-align: justify;
+}
+
+.player-info h2 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/* footer style  */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+    width: 1200px;
+    background-color: #000000;
+}
+
+.footer-logo img {
+    width: 300px;
+    margin-left: 350px;
+}
+
+.footer-option {
+    display: flex;
+
+
+}
+
+.footer-option li {
+    list-style: none;
+    margin: 0px 30px;
+    color: #FFFFFF;
+}
+
+.footer-icon {
+    width: 200px;
+    margin-left: 400px;
+}
+
+.footer-icon a {
+    padding: 10px;
+    color: rgba(69, 255, 252, 0.882);
+}
+
+small {
+    text-align: center;
+    margin-left: 410px;
+    color: #FFFFFF;
+}
+
+/* media queri */
+
+@media only screen and (max-device-width : 767px) {
+    .container {
+        width: 100%;
+        padding-left: 23px;
+        flex-direction: column-reverse;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+
+
+    .header {
+        width: 100%;
+        height: 540px;
+    }
+
+    .header-info {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+
+    }
+
+    .header-caption {
+        width: 205px;
+        margin-left: 15px;
+    }
+
+    .header-caption h1 {
+        color: #FFFFFF;
+        font-size: 30px;
+
+    }
+
+    .header-image img {
+        width: 300px;
+        height: 200px;
+        top: 80px;
+    }
+
+    .menu-player {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .players {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-option li {
+        display: none;
+
+    }
+
+    .footer-logo img {
+        display: none;
+    }
+
+    small,
+    .footer-icon {
+        margin: 0px;
+    }
+}
+
+/* iPads */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .container {
+        width: 100%;
+        padding-left: 23px;
+        flex-direction: column-reverse;
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+
+    .header {
+        width: 100%;
+        height: 350px;
+    }
+
+    .header-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .header-caption {
+        width: 205px;
+        margin-left: 30px;
+    }
+
+    .header-caption h1 {
+        color: #FFFFFF;
+        font-size: 30px;
+
+    }
+
+    .header-image img {
+        width: 300px;
+        height: 200px;
+        top: 80px;
+    }
+
+    /* aside-menu */
+    .menu-player {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .aside-menu {
+        background-color: black;
+        width: 100%;
+        height: auto;
+
+    }
+
+    .aside-menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .aside-menu li {
+        list-style: none;
+        width: 200px;
+        height: 30px;
+        padding: 8px;
+
+        text-align: center;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+
+    }
+
+    .aside-menu li a:hover {
+        color: orange;
+
+    }
+
+    .aside-menu li a {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        color: #110202;
+    }
+
+
+    .players {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        background-color: #000000;
+    }
+
+    footer {
+        background-color: #000000;
+        width: 100%;
+    }
+
+    small,
+    .footer-icon {
+        margin: auto;
+        text-align: center;
+    }
+}
