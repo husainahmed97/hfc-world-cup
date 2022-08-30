@@ -65,10 +65,20 @@ footer {
     margin-left: 30px;
 }
 
+.header-titel {
+    font-size: 70px;
+    color: orange;
+}
+
 .header-caption h1 {
     color: #FFFFFF;
-    font-size: 64px;
+    font-size: 50px;
 
+}
+
+.header-titel {
+    font-size: 70px;
+    color: orange;
 }
 
 .header-image img {

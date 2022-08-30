@@ -39,6 +39,11 @@ footer {
     align-items: center;
     padding: 10px 24px;
     margin-right: 20px;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
 }
 
 .button a {
@@ -46,6 +51,11 @@ footer {
     color: #FFFFFF;
     font-weight: 700;
     text-decoration: none;
+}
+
+h3 {
+    font-size: 20px;
+    color: #FFFFFF;
 }
 
 .fa-sign {
@@ -163,30 +173,16 @@ footer {
     padding: 15px;
 }
 
-.player-image img {
-    width: 200px;
-    height: 200px;
-}
-
-.player-info {
-    width: 200px;
-    text-align: justify;
-}
-
-.player-info h2 {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.description {
+.form {
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
 
 }
 
-h3 {
-    font-size: 20px;
-    color: #FFFFFF;
+.form p input {
+    padding: 15px;
+    width: 250px;
 }
 
 /* footer style  */
